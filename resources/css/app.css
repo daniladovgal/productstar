@@ -1,0 +1,24 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	widows: 100%;
+	height: 100%;
+}
+
+section,table {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+tr {
+	padding: 5px;
+	cursor: pointer;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+}
