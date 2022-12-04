@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/weather','Api\WeatherController');
 Route::get('/users/{id?}', 'Api\UsersController');
+Route::get('/lessons', 'Api\LessonsController');

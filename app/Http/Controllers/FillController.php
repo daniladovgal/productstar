@@ -28,19 +28,15 @@ class FillController extends Controller
             ]);
 
             $existing = [];
-            $ok = rand(0,20);
+            $ok = rand(1,20);
+            $j=1;
 
-            for ($j = 0; $j < $ok; $j++) {
-                while(!in_array($number = rand(0,$this->lessons_count),$existing)) {
-                    array_push($existing, $number);
-                }
-            }
-            
-            foreach ($existing AS $value) {
+            while ($j <= $ok) {
                 $complete->insert([
                     'userid'=>$i,
-                    'lessonid'=>$value
+                    'lessonid'=>$j
                 ]);
+                $j++;
             }
         }
 

@@ -17,8 +17,16 @@ Route::get('/weather', function () {
     return view('weather');
 });
 
+Route::get('/', function () {
+    return view('weather');
+});
+
 Route::get('/users/{id?}', function () {
     return view('users');
+});
+
+Route::get('/lessons', function () {
+    return view('weather');
 });
 
 Route::get('/fill', 'FillController');

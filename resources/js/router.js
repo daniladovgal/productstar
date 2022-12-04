@@ -1,8 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Weather from './views/layouts/Weather.vue';
-import Users from './views/layouts/Users.vue';
+import Weather from './views/Weather.vue';
+import Users from './views/Users.vue';
+import Lessons from './views/Lessons.vue';
 
 const routes = [
+    {
+        path: '/',
+        name: Weather,
+        component: Weather
+    },
     {
         path: '/weather',
         name: Weather,
@@ -13,6 +19,11 @@ const routes = [
         name: Users,
         component: Users
     },
+    {
+        path: '/lessons',
+        name: Lessons,
+        component: Lessons
+    }
 ];
 
 const router = createRouter({
